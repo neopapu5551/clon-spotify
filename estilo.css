@@ -1,0 +1,210 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10px, 1000px));
+    position: fixed;
+    margin: -10px;
+    background: #000;
+    opacity: 80%;
+}
+
+
+/*Propiedades del logo*/
+
+.panel img {
+    opacity: 100%;
+    width: 150px;
+    margin-top: -25px;
+    margin-left: 20px;
+}
+
+.form input {
+    margin-top: 7vh;
+    margin-left: 5vh;
+    border-radius: 25px;
+    font-size: 14px;
+    border-color: transparent;
+    color: #000;
+    text-align: center;
+}
+
+.form .cuenta {
+    background: #1DB954;
+    margin-left: 5vh;
+}
+
+
+/*Imagenes del momento*/
+
+.momento {
+    text-align: center;
+    display: grid;
+    font-size: 60px;
+    align-items: center;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.momento .text-intro {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/4;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    width: 1fr;
+}
+
+
+/*Dispositivos img*/
+
+.moment-flex {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    background-color: #1DB954;
+}
+
+.moment-flex img {
+    padding-left: 25px;
+    padding-top: 20px;
+    width: 500px;
+    height: 250px;
+}
+
+.moment-flex img:hover {
+    background-color: #f2ae54;
+}
+
+
+/*Mensaje de inicio*/
+
+.dialogo-flex {
+    flex-wrap: wrap;
+    display: flex;
+    background: #f2ae54;
+    height: 800px;
+}
+
+
+/*Caja-flex de dialogo*/
+
+.dialogo {
+    margin-left: 50px;
+    margin-top: 180px;
+    width: 750px;
+    text-align: left;
+    font-size: 70px;
+    background: #f2ae54;
+    color: white;
+}
+
+
+/*Boton de ingrso*/
+
+.boton-ingreso {
+    margin-top: 350px;
+    margin-left: 350px;
+    border-radius: 25px;
+    font-size: 22px;
+    border-color: transparent;
+    width: 350px;
+    height: 60px;
+    color: white;
+    background: #1DB954;
+}
+
+.boton-ingreso:hover {
+    margin-top: 350px;
+    margin-left: 350px;
+    border-radius: 25px;
+    font-size: 22px;
+    border-color: transparent;
+    width: 350px;
+    height: 60px;
+    color: white;
+    background: #1db99f;
+}
+
+
+/*imagenes en inicio*/
+
+.img-dialogo {
+    margin-left: 40px;
+    margin-top: -200px;
+    width: 350px;
+    height: 300px;
+    display: grid;
+}
+
+.uwu {
+    margin-top: 35px;
+    margin-left: 98vh;
+    width: 700px;
+    height: 400px;
+}
+
+
+/*Responsive Desing para Celular*/
+
+@media only screen and (max-width: 800px) {
+    /*Mensaje de inicio*/
+    .dialogo-flex {
+        flex-wrap: wrap;
+        display: flex;
+        background: #f2ae54;
+        height: 800px;
+    }
+    /*Caja-flex de dialogo*/
+    .dialogo {
+        width: 500px;
+        text-align: center;
+        margin: auto;
+        font-size: 45px;
+        background: #f2ae54;
+        color: white;
+    }
+    /*Boton de ingrso*/
+    .boton-ingreso {
+        margin: auto;
+        border-radius: 25px;
+        font-size: 18px;
+        border-color: transparent;
+        width: 350px;
+        height: 60px;
+        color: white;
+        background: #1DB954;
+        z-index: 1;
+    }
+    .boton-ingreso:hover {
+        margin: auto;
+        border-radius: 25px;
+        font-size: 18px;
+        border-color: transparent;
+        width: 350px;
+        height: 60px;
+        color: white;
+        background: #1db99f;
+        z-index: 3;
+    }
+    /*imagenes en inicio*/
+    .img-dialogo {
+        margin: auto;
+        margin-top: -450px;
+        width: 200px;
+        height: 200px;
+        display: grid;
+        z-index: 1;
+    }
+    .uwu {
+        margin-bottom: -482px;
+        margin-left: -5px;
+        width: 600px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {}
