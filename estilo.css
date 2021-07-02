@@ -40,18 +40,11 @@
 
 /*Imagenes del momento*/
 
-.momento {
-    text-align: center;
-    display: grid;
-    font-size: 60px;
-    align-items: center;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-}
-
 .momento .text-intro {
+    font-size: 42px;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    grid-column: 1/4;
     margin-top: 100px;
     margin-left: 200px;
     margin-right: 200px;
@@ -94,7 +87,7 @@
 
 .dialogo {
     margin-left: 50px;
-    margin-top: 180px;
+    margin-top: 120px;
     width: 750px;
     text-align: left;
     font-size: 70px;
@@ -106,7 +99,6 @@
 /*Boton de ingrso*/
 
 .boton-ingreso {
-    margin-top: 100px;
     margin-left: 850px;
     border-radius: 25px;
     font-size: 22px;
@@ -118,7 +110,6 @@
 }
 
 .boton-ingreso:hover {
-    margin-top: 100px;
     margin-left: 850px;
     border-radius: 25px;
     font-size: 22px;
@@ -141,16 +132,29 @@
 }
 
 .uwu {
-    margin-top: 35px;
+    margin-top: 130px;
     margin-left: 98vh;
     width: 650px;
-    height: 320px;
+    height: 300px;
 }
 
 
 /*Responsive Desing para Celular*/
 
 @media only screen and (max-width: 800px) {
+    /*Cuenta login*/
+    .form input {
+        margin-top: 10px;
+        margin-left: 5vh;
+        border-radius: 25px;
+        font-size: 14px;
+        border-color: transparent;
+        color: #000;
+        text-align: center;
+    }
+    .form .cuenta {
+        background: #1DB954;
+    }
     /*Mensaje de inicio*/
     .dialogo-flex {
         flex-wrap: wrap;
@@ -160,16 +164,18 @@
     }
     /*Caja-flex de dialogo*/
     .dialogo {
+        padding-top: 210px;
         width: 500px;
         text-align: center;
         margin: auto;
-        font-size: 45px;
+        font-size: 38px;
         background: #f2ae54;
         color: white;
     }
     /*Boton de ingrso*/
     .boton-ingreso {
         margin: auto;
+        margin-top: 220px;
         border-radius: 25px;
         font-size: 18px;
         border-color: transparent;
@@ -177,10 +183,10 @@
         height: 60px;
         color: white;
         background: #1DB954;
-        z-index: 1;
     }
     .boton-ingreso:hover {
         margin: auto;
+        margin-top: 220px;
         border-radius: 25px;
         font-size: 18px;
         border-color: transparent;
@@ -188,19 +194,42 @@
         height: 60px;
         color: white;
         background: #1db99f;
-        z-index: 3;
     }
     /*imagenes en inicio*/
     .img-dialogo {
         margin: auto;
-        margin-top: -450px;
+        margin-top: -430px;
         width: 200px;
         height: 200px;
-        display: grid;
-        z-index: 1;
+    }
+    .moment-flex {
+        margin-top: 238px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .moment-flex img {
+        padding-left: 25px;
+        padding-top: 20px;
+        width: 400px;
+        height: 250px;
+    }
+    .moment-flex img:hover {
+        background-color: #f2ae54;
+    }
+    /*Texto inf*/
+    .momento .text-intro {
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 100px;
+        width: 1fr;
     }
     .uwu {
-        margin-bottom: -482px;
+        margin-top: 160px;
         margin-left: -5px;
         width: 600px;
         height: 250px;
