@@ -1,10 +1,4 @@
 function ingreso() {
-    var url = `https://www.youtube.com/watch?v=1RKqOmSkGgM&list=RD1RKqOmSkGgM&start_radio=1&autoplay=1`;
-    var elemento = document.getElementsByClassName("uwu")[0];
-
-    if (elemento) {
-        elemento.src = url;
-    } else {
-        console.error("No se encontró un elemento con la clase 'uwu'.");
-    }
+    var url = "https://www.youtube.com/embed/1RKqOmSkGgM?autoplay=1&playlist=1RKqOmSkGgM"; // Cambié 'watch?v=' por 'embed/' y añadí autoplay
+    document.getElementsByClassName("uwu")[0].src = url; // Asigna el enlace al iframe
 }
